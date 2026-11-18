@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perla de Azúcar · Pastelería árabe · Villa del Prado</title>
+<meta name="description" content="Perla de Azúcar, pastelería árabe en Villa del Prado (Madrid). Sabores tradicionales con un toque de elegancia. Encargos para celebraciones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fbf3ea;--rose:#e9a7b6;--blush:#f7dde2;--wine:#5a1f33;--gold:#b98a3e;--mute:#7b5a64;
+ --serif:'Amiri',Georgia,serif;--sans:'Jost',system-ui,sans-serif;
+ --star:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cpath d='M32 4l6 15 15-6-6 15 15 6-15 6 6 15-15-6-6 15-6-15-15 6 6-15-15-6 15-6-6-15 15 6z' fill='none' stroke='%23b98a3e' stroke-opacity='.28'/%3E%3C/svg%3E")}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--wine);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--wine);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+.banner{background:var(--wine);color:#f8e6ea;text-align:center;font-size:.92rem;padding:9px 16px}
+.banner b{color:#f3d08a}
+header{position:sticky;top:0;z-index:10;background:rgba(251,243,234,.93);backdrop-filter:blur(8px);border-bottom:1px solid #ecd9cf}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.5rem;text-decoration:none;font-style:italic}
+nav{display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;font-size:.94rem;color:var(--mute)}
+nav a:hover{color:var(--wine)}
+.btn{display:inline-block;background:var(--wine);color:#fff!important;text-decoration:none;font-weight:500;padding:14px 28px;border-radius:999px;transition:transform .15s,background .15s}
+.btn:hover{background:#3d1222;transform:translateY(-2px)}
+.btn.gold{background:var(--gold)}
+.btn.gold:hover{background:#9b7230}
+.btn.line{background:transparent;color:var(--wine)!important;border:1px solid var(--wine)}
+.btn.line:hover{background:var(--blush)}
+nav .btn{padding:9px 20px;font-size:.88rem}
+
+.hero{background:var(--star),linear-gradient(180deg,var(--blush),var(--cream));padding:84px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.ar{font-family:var(--serif);color:var(--gold);font-size:1.6rem;margin-bottom:6px;animation:rise 1s both}
+.hero h1{font-family:var(--serif);font-style:italic;font-weight:700;font-size:clamp(3.2rem,9vw,6.6rem);line-height:1;animation:rise 1s .1s both}
+.hero .tag{font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.8rem);color:var(--mute);margin:16px 0 30px;max-width:30ch;animation:rise 1s .25s both}
+.cta{display:flex;gap:12px;flex-wrap:wrap;animation:rise 1s .4s both}
+.arch{justify-self:center;width:min(300px,80%);aspect-ratio:3/4;border-radius:999px 999px 14px 14px;border:2px solid var(--gold);padding:10px;animation:rise 1.2s .3s both}
+.arch div{height:100%;border-radius:999px 999px 8px 8px;background:linear-gradient(170deg,#f6c4cf,var(--rose));display:grid;place-items:center;text-align:center;padding:24px;color:#7a3548;font-family:var(--serif);font-size:1.2rem;line-height:1.3}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+section{padding:96px 0}
+h2{font-family:var(--serif);font-weight:700;font-size:clamp(2.2rem,5vw,3.3rem);line-height:1.1;margin-bottom:12px}
+.lead{max-width:52ch;color:var(--mute);font-size:1.06rem}
+.orn{color:var(--gold);letter-spacing:.5em;margin-bottom:14px;font-size:.9rem}
+
+.about{background:#fff}
+.about .wrap{max-width:760px;text-align:center}
+.about .lead{margin:0 auto 14px}
+
+.menu .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
+.card{background:#fff;border:1px solid #ecd9cf;border-radius:14px;overflow:hidden}
+.card .ph{aspect-ratio:4/3;background:linear-gradient(150deg,var(--blush),var(--rose));display:grid;place-items:center;color:#8a4a5b;font-size:.85rem}
+.card:nth-child(even) .ph{background:linear-gradient(150deg,#f6e3bf,#e3bf7f);color:#7a5a1d}
+.card div.t{padding:18px 20px 22px}
+.card h3{font-family:var(--serif);font-size:1.5rem;line-height:1.2}
+.card p{color:var(--mute);font-size:.94rem;margin-top:4px}
+.note{margin-top:22px;font-size:.86rem;color:var(--mute)}
+
+.orders{background:var(--wine);color:#f8e6ea;background-image:var(--star)}
+.orders h2{color:#fff}
+.orders .lead{color:#e8c9d1}
+.occ{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 32px}
+.occ span{border:1px solid rgba(243,208,138,.6);color:#f3d08a;border-radius:999px;padding:6px 18px;font-size:.92rem}
+
+.gal .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:38px}
+.tile{aspect-ratio:1;border-radius:10px;background:linear-gradient(150deg,var(--blush),var(--rose));display:flex;align-items:flex-end;padding:12px;font-size:.84rem;color:#7a3548;text-decoration:none}
+.tile:nth-child(3n){background:linear-gradient(150deg,#f6e3bf,#e3bf7f);color:#7a5a1d}
+.tile:hover{outline:3px solid var(--wine);outline-offset:-3px}
+.more{margin-top:22px;font-weight:500}
+
+.visit{background:#fff}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+address{font-style:normal;font-family:var(--serif);font-size:1.6rem;line-height:1.35;margin:20px 0 26px}
+.map{display:flex;flex-direction:column;justify-content:flex-end;gap:6px;aspect-ratio:4/3;padding:28px;border-radius:14px;text-decoration:none;border:1px solid #ecd9cf;background:var(--star),var(--blush)}
+.map span{font-family:var(--serif);font-size:1.5rem}
+.map b{color:var(--gold)}
+.map:hover b{text-decoration:underline}
+footer{padding:26px 0 40px;font-size:.86rem;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:800px){
+ nav a:not(.btn){display:none}
+ .hero .wrap,.visit .grid{grid-template-columns:1fr;gap:40px}
+ .menu .grid{grid-template-columns:1fr 1fr}
+ .gal .tiles{grid-template-columns:repeat(2,1fr)}
+ section{padding:70px 0}
+ .arch{order:-1;width:min(220px,60%)}
+}
+@media (max-width:520px){.menu .grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="banner">✦ <b>Inauguración: jueves 19</b> · ¡Os esperamos! ✦</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">Perla de Azúcar</a>
+    <nav>
+      <a href="#carta">Nuestros dulces</a>
+      <a href="#encargos">Encargos</a>
+      <a href="#visitanos">Dónde estamos</a>
+      <a class="btn" href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Hacer un encargo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="ar" lang="ar" dir="rtl">أهلاً وسهلاً</p>
+      <h1>Perla de Azúcar</h1>
+      <p class="tag">El arte de la repostería árabe, con un toque de elegancia.</p>
+      <div class="cta">
+        <a class="btn" href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Hacer un encargo</a>
+        <a class="btn line" href="#carta">Ver nuestros dulces</a>
+      </div>
+    </div>
+    <div class="arch"><div>Aquí va una foto<br>de la pastelería<br>o de vuestros dulces</div></div>
+  </div>
+</div>
+
+<section class="about">
+  <div class="wrap">
+    <p class="orn">✦ ✦ ✦</p>
+    <h2>Sabores tradicionales, hechos con cariño</h2>
+    <p class="lead">En Perla de Azúcar elaboramos pastelería árabe como se ha hecho siempre, con recetas tradicionales y una presentación cuidada hasta el último detalle.</p>
+    <p class="lead">Tu momento más dulce empieza aquí.</p>
+  </div>
+</section>
+
+<section class="menu" id="carta">
+  <div class="wrap">
+    <h2>Nuestros dulces</h2>
+    <p class="lead">Una selección de nuestra pastelería, hecha cada día.</p>
+    <div class="grid">
+      <div class="card"><div class="ph">Foto</div><div class="t"><h3>Baklava</h3><p>Capas finas de hojaldre, frutos secos y almíbar.</p></div></div>
+      <div class="card"><div class="ph">Foto</div><div class="t"><h3>Cuernos de gacela</h3><p>Masa de almendra perfumada con agua de azahar.</p></div></div>
+      <div class="card"><div class="ph">Foto</div><div class="t"><h3>Chebakia</h3><p>Dulce frito de miel y sésamo, clásico de las celebraciones.</p></div></div>
+      <div class="card"><div class="ph">Foto</div><div class="t"><h3>Briwats de almendra</h3><p>Crujientes triángulos rellenos de almendra y miel.</p></div></div>
+      <div class="card"><div class="ph">Foto</div><div class="t"><h3>Makroud</h3><p>Sémola rellena de dátil, con un toque de miel.</p></div></div>
+      <div class="card"><div class="ph">Foto</div><div class="t"><h3>Bandejas variadas</h3><p>Para regalar o para compartir en casa.</p></div></div>
+    </div>
+    <p class="note">Productos de ejemplo: se sustituyen por vuestra carta real.</p>
+  </div>
+</section>
+
+<section class="orders" id="encargos">
+  <div class="wrap">
+    <h2>Encargos para tus celebraciones</h2>
+    <p class="lead">Bandejas y mesas dulces a medida para que tu evento sea inolvidable.</p>
+    <div class="occ"><span>Bodas</span><span>Bautizos y comuniones</span><span>Cumpleaños</span><span>Regalos</span><span>Empresas</span></div>
+    <a class="btn gold" href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Pedir presupuesto</a>
+  </div>
+</section>
+
+<section class="gal">
+  <div class="wrap">
+    <h2>Un vistazo a la pastelería</h2>
+    <p class="lead">Dulces, detalles y el rincón donde nace todo.</p>
+    <div class="tiles">
+      <a class="tile" href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Escaparate</a>
+      <a class="tile" href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Baklava</a>
+      <a class="tile" href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Bandejas</a>
+      <a class="tile" href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Té y dulces</a>
+    </div>
+    <p class="more"><a href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Síguenos en Instagram @perla_de_azucar</a></p>
+  </div>
+</section>
+
+<section class="visit" id="visitanos">
+  <div class="wrap grid">
+    <div>
+      <h2>Visítanos</h2>
+      <p class="lead">Pasa a probar nuestros dulces en Villa del Prado.</p>
+      <address>Av. Construcción, 22<br>28630 Villa del Prado, Madrid</address>
+      <a class="btn" href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Escribirnos por Instagram</a>
+    </div>
+    <a class="map" href="https://www.google.com/maps/search/?api=1&query=Av.+Construcci%C3%B3n+22,+28630+Villa+del+Prado,+Madrid" target="_blank" rel="noopener"><span>Av. Construcción, 22</span><b>Cómo llegar</b></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Perla de Azúcar · Perla By Abdellaoui</span>
+    <a href="https://www.instagram.com/perla_de_azucar/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+</body>
+</html>
